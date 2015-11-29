@@ -18,9 +18,7 @@
             type: 'POST',
             headers: {'Authorization': 'JWT ' + access_token},
             data: data,
-            cache: false,
-            processData: false,
-            contentType: false
+            cache: false
           })
           .done(function(result) {
             fn(null, result);
