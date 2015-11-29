@@ -11,7 +11,7 @@
       // Uploads image
       upload: function (file, access_token, fn) {
         var data = new FormData();
-        data.append('image', file);
+        data.append('image', file, file.name);
 
         $.ajax({
             url: url + '/',
