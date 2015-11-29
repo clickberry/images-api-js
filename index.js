@@ -19,7 +19,8 @@
             headers: {'Authorization': 'JWT ' + access_token},
             data: data,
             cache: false,
-            processData: false
+            processData: false,
+            contentType: false
           })
           .done(function(result) {
             fn(null, result);
