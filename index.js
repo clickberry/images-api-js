@@ -14,7 +14,7 @@
         data.append('image', file);
 
         $.ajax({
-            url: url + '/' + id,
+            url: url + '/',
             type: 'POST',
             headers: {'Authorization': 'JWT ' + access_token},
             data: data,
