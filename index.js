@@ -43,7 +43,7 @@
           });
       },
       // Deletes image by id
-      update: function (id, access_token, fn) {
+      delete: function (id, access_token, fn) {
         $.ajax({
             url: url + '/' + id,
             type: 'DELETE',
